@@ -3,7 +3,7 @@ Feature: Default
 
 	Background:
 		#@INTA-1422
-#		minor change done
+#		minor change done mingor change2
 		Given the user is on the login page
 		
 
