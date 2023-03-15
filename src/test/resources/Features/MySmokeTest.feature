@@ -3,11 +3,10 @@ Feature: Default
 
 	Background:
 		#@INTA-1422
-#		minor change done mingor change2
 		Given the user is on the login page
 		
 
-	
+#	miner change
 	@INTA-1470 @INTA-1486 @INTA-1479
 	Scenario: US1AC1TC1 Verify Menu Options for Driver
 		Given the user logged in as "driver"
