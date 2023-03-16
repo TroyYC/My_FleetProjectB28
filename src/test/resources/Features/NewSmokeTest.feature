@@ -1,4 +1,4 @@
-@INTA-1478
+@INTA-1509
 Feature: Default
 
 	Background:
@@ -7,28 +7,30 @@ Feature: Default
 		
 
 	
-	@INTA-1470 @INTA-1497 @INTA-1493 @INTA-1491 @INTA-1488 @INTA-1486 @INTA-1479
-	Scenario: US1AC1TC1 Verify Menu Options for Driver
-		Given the user logged in as "driver"
-		    Then the user should see following options
-		      | Fleet      |
-		      | Customers  |
-		      | Activities |
-		      | System     |	
-
-	
-	@INTA-1471 @INTA-1497 @INTA-1493 @INTA-1491 @INTA-1488 @INTA-1486 @INTA-1479
+	@INTA-1506 @INTA-1508
 	Scenario:  US2AC1TC1 Verify user access to the Oroinc Documentation page
 		Given the user logged in as "sales manager"
 		    And the user click on the question icon
-		    Then the user should see "Welcome to Oro Documentation"	
+		    Then the user should see "Welcome to Oro Documentation"
+
+#		minor change
 
 	
-	@INTA-1472 @INTA-1497 @INTA-1493 @INTA-1491 @INTA-1488 @INTA-1486 @INTA-1479
+	@INTA-1507 @INTA-1508
 	Scenario: US3AC1TC1 Verify user can use how to use the pinbar
 		Given the user logged in as "sales manager"
 		    And the user click on the "Learn how to use this space" link
 		    Then the user should see following text
 		      | How To Use Pinbar                                                                      |
 		      | Use pin icon on the right top corner of page to create fast access link in the pinbar. |
-		    Then the users should see an image on the page
+		    Then the users should see an image on the page	
+
+	
+	@INTA-1505 @INTA-1508
+	Scenario: US1AC1TC1 Verify Menu Options for Driver
+		Given the user logged in as "driver"
+		    Then the user should see following options
+		      | Fleet      |
+		      | Customers  |
+		      | Activities |
+		      | System     |
